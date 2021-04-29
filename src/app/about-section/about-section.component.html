@@ -1,0 +1,41 @@
+<section>
+  <h1 id="about-heading" class="content-heading animate__animated hidden">
+    About
+  </h1>
+  <hr id="about-fieldset" class="animate__animated hidden" />
+  <div class="content">
+    <div
+      id="about-img"
+      *ngIf="mobile"
+      class="img-container animate__animated hidden"
+    >
+      <img src="../../assets/about/about-photo1.jpg" alt="" class="about-img" />
+    </div>
+    <div id="about-text" class="about-text animate__animated hidden">
+      <p>
+        I was born in Minnesota, but because of my father's work, I was raised
+        in about <i>four</i> different states. Since I moved around a lot, it
+        was tough keeping friends in school, so I figured that making friends
+        online would be more suited for my lifestyle.
+      </p>
+      <p>
+        What I didn't know was that being online would begin this
+        <span class="red">love</span> and
+        <span class="dark-red">passion</span> for technology and software. It
+        also allowed me to develop deep connections with <i>anyone</i> from
+        <i>anywhere</i>.
+      </p>
+      <p>
+        I would have never guessed that my hobbies and love for technology would
+        lead me to where I am today. I am always in awe at the
+        <i>beautiful</i> and <strong>powerful</strong> technological solutions
+        that brilliant engineers and developers come up with and I aspire to
+        also make a positive impact on the world through my skills, effort, and
+        passion.
+      </p>
+    </div>
+    <div id="about-img" *ngIf="!mobile" class="animate__animated hidden">
+      <img src="../../assets/about/about-photo1.jpg" alt="" class="about-img" />
+    </div>
+  </div>
+</section>

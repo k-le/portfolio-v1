@@ -1,0 +1,61 @@
+<section class="heroSection">
+  <div
+    id="heading-1"
+    class="intro-text animate__animated animate__fadeInUp"
+    style="animation-delay: 200ms"
+  >
+    <p>Hello, I'm</p>
+  </div>
+
+  <div
+    id="heading-2"
+    class="animate__animated animate__fadeInUp"
+    style="animation-delay: 400ms"
+  >
+    <h1>Kevin Le</h1>
+  </div>
+
+  <div
+    id="heading-3"
+    class="animate__animated animate__fadeInUp"
+    style="animation-delay: 650ms"
+  >
+    <h2>I'm a software engineer and a lover of tech, health, and fitness.</h2>
+  </div>
+
+  <app-title-button
+    id="heading-4"
+    class="animate__animated animate__fadeInUp"
+    style="animation-delay: 1050ms"
+  ></app-title-button>
+
+  <div @myFadeElement *ngIf="showFixedButtons" class="side-buttons">
+    <a [attr.href]="button.link" target="_blank" *ngFor="let button of buttons">
+      <div class="img-box">
+        <img [attr.src]="button.imgPath" alt="" class="img1" />
+        <img [attr.src]="button.darkImgPath" alt="" class="img2" />
+      </div>
+    </a>
+    <div class="img-box contact-btn" (click)="open()">
+      <img src="../../assets/logos/email.png" alt="" class="img1" />
+      <img src="../../assets/logos/email-dark.png" alt="" class="img2" />
+    </div>
+  </div>
+
+  <aside
+    @fadeBurgerMenu
+    *ngIf="showBurgerMenu"
+    id="burger-menu"
+    class="animate__animated animate__fadeIn"
+  >
+    <app-aside-menu></app-aside-menu>
+  </aside>
+
+  <div
+    @myFadeElement
+    id="arrow"
+    class="arrow animate__animated animate__bounce animate__infinite"
+    style="animation-delay: 75ms"
+    *ngIf="isScrollAtTop()"
+  ></div>
+</section>

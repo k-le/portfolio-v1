@@ -1,0 +1,55 @@
+.vertical-grid {
+  position: fixed;
+  top: calc(50% - 34px);
+  left: 10px;
+  z-index: 5;
+}
+
+.section-circle {
+  height: 12px;
+  width: 12px;
+  background-color: rgb(206, 206, 206);
+  border-radius: 50%;
+  transition-duration: 200ms;
+}
+
+.side-bar {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  opacity: 0;
+  visibility: hidden;
+  width: 120px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(180, 221, 235, 0.9),
+    rgba(114, 95, 140, 0.5)
+  );
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  position: relative;
+  top: -5px;
+  left: 150%;
+  transition-duration: 200ms;
+}
+
+.section-circle:hover {
+  background-color: rgb(118, 118, 118);
+}
+
+.section-circle:active {
+  background-color: rgb(62, 62, 62);
+}
+
+.section-circle:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.highlight {
+  background-color: rgb(118, 118, 118);
+}

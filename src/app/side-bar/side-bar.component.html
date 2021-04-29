@@ -1,0 +1,12 @@
+<div class="vertical-grid">
+  <div class="side-bar">
+    <div
+      class="section-circle m-2"
+      *ngFor="let section of sections"
+      (click)="goToSection(section)"
+      [ngClass]="{ highlight: selectedSection === section }"
+    >
+      <span class="tooltip-text p-1">{{ section.id }}</span>
+    </div>
+  </div>
+</div>

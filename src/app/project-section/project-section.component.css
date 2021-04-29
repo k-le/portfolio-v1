@@ -1,0 +1,155 @@
+section {
+  margin: 10px auto;
+  max-width: 860px;
+  padding: 50px 0px;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+/* || Content Styling */
+
+.content-heading {
+  color: var(--blue-black);
+}
+
+.content-fieldset {
+  color: black;
+  height: 2px;
+  animation-duration: 2s;
+  animation-delay: 500ms;
+  animation-name: growProject;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.content-left {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 1px;
+}
+
+.content-right {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 1px;
+}
+
+.img-container {
+  position: relative;
+  top: calc(50% - 113px);
+  max-width: 340px;
+  height: auto;
+  transition-duration: 100ms;
+}
+
+.project-img {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  box-shadow: 0px 3px 5px -5px;
+  transition-duration: 100ms;
+}
+
+.project-text {
+  background-color: rgba(var(--lightest-grey), 0.9);
+  color: var(--blue-grey);
+  padding: 10px 25px;
+  max-width: 640px;
+  transition-duration: 100ms;
+}
+
+.content-left .project-text {
+  transform: translateX(-8%);
+}
+
+.content-right .project-text {
+  transform: translateX(8%);
+  z-index: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* || Content Transition Styling */
+
+.content-left:hover .project-text {
+  transform: translate(13%, 2%);
+}
+
+.content-left:hover .project-img {
+  transform: scale(150%);
+  z-index: 10;
+}
+
+.content-right:hover .project-text {
+  transform: translate(-13%, 2%);
+}
+
+.content-right:hover .project-img {
+  transform: scale(150%);
+  z-index: 10;
+}
+
+/* || Content Animation Styling */
+
+@keyframes growProject {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 165px;
+  }
+}
+
+/* || Responsive Media */
+
+@media screen and (max-width: 997px) {
+  .content-left,
+  .content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-heading {
+    text-align: center;
+  }
+
+  .content-fieldset {
+    visibility: hidden;
+  }
+
+  .content-left .project-text,
+  .content-right .project-text {
+    background-color: white;
+    margin-top: 15px;
+    transform: translateX(0);
+  }
+
+  .project-text {
+    max-width: 640px;
+  }
+
+  .content-left:hover .project-text,
+  .content-left:hover .project-img,
+  .content-right:hover .project-text,
+  .content-right:hover .project-img {
+    z-index: 0;
+    transform: translate(0, 0);
+    transform: scale(100%);
+  }
+
+  .project-img {
+    max-width: 640px;
+  }
+
+  .img-container {
+    box-sizing: border-box;
+    max-width: 640px;
+    padding: 0px 5px;
+    top: 0px;
+  }
+}

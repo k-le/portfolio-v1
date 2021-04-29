@@ -1,0 +1,130 @@
+/* || Hero Section Styling */
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.intro-text {
+  position: relative;
+  top: 1.5rem;
+}
+
+.intro-text p {
+  font-family: "Noto Serif", serif;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+#heading-2 h1 {
+  font-size: 6rem;
+}
+
+#heading-3 h2 {
+  text-align: center;
+}
+
+/* || Side Button Styling */
+
+.side-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  position: fixed;
+  left: 35px;
+  top: 35px;
+  z-index: 5;
+}
+
+.img-box {
+  height: 70px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-box img {
+  max-width: 70px;
+}
+
+.img1 {
+  position: absolute;
+  z-index: 2;
+  transition: 200ms ease-in;
+  transform-origin: center;
+  width: 100%;
+}
+
+.img2 {
+  transform: scale(1);
+  opacity: 1;
+  transition: 200ms ease-in;
+  width: 100%;
+}
+
+.img-box:hover .img1 {
+  filter: blur(2px);
+  transform: scale(1.02);
+  opacity: 0;
+}
+
+.img-box:hover .img2 {
+  filter: blur(0px);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+}
+
+/* || Arrow Styling */
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid var(--blue-black);
+  clip-path: polygon(50% 38%, 100% 23%, 50% 47%, 0 23%);
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 50px);
+}
+
+.arrow.animate__bounce {
+  animation-duration: 1250ms;
+}
+
+/* || Burger Menu Styling */
+
+#burger-menu {
+  animation-duration: 200ms;
+  z-index: 100;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* || Responsive Media */
+
+@media screen and (max-width: 997px) {
+  .intro-text p {
+    font-size: 2rem;
+  }
+
+  #heading-2 h1 {
+    font-size: 4rem;
+  }
+
+  #heading-3 h2 {
+    box-sizing: border-box;
+    padding: 0px 5px;
+    font-size: 1.3rem;
+  }
+}

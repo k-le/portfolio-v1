@@ -1,0 +1,24 @@
+.contact-btn {
+  background-color: var(--red);
+  color: white;
+  transition-duration: 100ms;
+}
+
+.contact-btn:hover {
+  background-color: var(--dark-red);
+}
+
+.btn-img {
+  position: relative;
+  max-width: 32px;
+  padding-right: 5px;
+  bottom: 2px;
+}
+
+/* || Mobile Styling */
+
+.mobile-contact {
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}

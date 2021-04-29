@@ -1,0 +1,38 @@
+<div *ngIf="!mobile" class="mt-3">
+  <a
+    [attr.href]="button.link"
+    target="_blank"
+    *ngFor="let button of titleButtons"
+  >
+    <div
+      [attr.id]="'btn-' + button.name"
+      type="button"
+      class="title-btn btn btn-lg m-1"
+    >
+      <img
+        [attr.src]="'../../assets/logos/' + button.name + '-for-btn.png'"
+        alt=""
+        class="btn-img"
+      />
+      <span>{{ button.name }}</span>
+    </div>
+  </a>
+  <app-contact-button class="m-1"></app-contact-button>
+</div>
+
+<div *ngIf="mobile" class="mt-3">
+  <a
+    [attr.href]="button.link"
+    target="_blank"
+    *ngFor="let button of fixedButtons"
+  >
+    <div class="img-box mx-2">
+      <img [attr.src]="button.imgPath" alt="" class="img1" />
+      <img [attr.src]="button.darkImgPath" alt="" class="img2" />
+    </div>
+  </a>
+  <div class="img-box contact-btn mx-2" (click)="open()">
+    <img src="../../assets/logos/email.png" alt="" class="img1" />
+    <img src="../../assets/logos/email-dark.png" alt="" class="img2" />
+  </div>
+</div>

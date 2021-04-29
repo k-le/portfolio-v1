@@ -1,0 +1,102 @@
+/* || Section Styling */
+section {
+  margin: 10px auto;
+  max-width: 860px;
+  padding: 50px 0px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* || Content Styling */
+
+.content-heading {
+  color: var(--blue-black);
+  transition: all 0.2s ease-in-out;
+}
+
+.content-heading:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  background-color: darken(orange, 5%);
+  visibility: hidden;
+  transform: scaleX(0);
+}
+
+.content-heading-hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.content-fieldset {
+  color: black;
+  height: 2px;
+  animation-duration: 2s;
+  animation-delay: 500ms;
+  animation-name: growAbout;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 35px;
+}
+
+.about-text {
+  color: var(--blue-grey);
+  max-width: 640px;
+}
+
+.about-img {
+  box-shadow: 2px 3px 5px -5px;
+  border-radius: 5px;
+  max-width: 340px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* || About Animation Styling */
+
+@keyframes growAbout {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 125px;
+  }
+}
+
+/* || Responsive Media */
+
+@media screen and (max-width: 997px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-heading {
+    text-align: center;
+    padding: 0px 5px;
+  }
+
+  .content-fieldset {
+    visibility: hidden;
+  }
+
+  .img-container {
+    padding: 2px 0px;
+  }
+
+  .about-img {
+    max-width: 340px;
+  }
+}

@@ -1,0 +1,23 @@
+<div #burgerMenu class="burger-menu" (click)="toggleSideBar(burgerMenu)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<div @hideSideBar *ngIf="showSideBar" class="sidebar">
+  <a
+    [attr.href]="button.link"
+    target="_blank"
+    *ngFor="let button of titleButtons"
+  >
+    <div [attr.id]="'btn-' + button.name" type="button" class="">
+      <img
+        [attr.src]="'../../assets/logos/' + button.name + '-for-btn.png'"
+        alt=""
+        class="btn-img"
+      />
+      <span>{{ button.name }}</span>
+    </div>
+  </a>
+  <app-contact-button></app-contact-button>
+</div>
