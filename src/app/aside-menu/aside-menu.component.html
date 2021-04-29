@@ -10,12 +10,8 @@
     target="_blank"
     *ngFor="let button of titleButtons"
   >
-    <div [attr.id]="'btn-' + button.name" type="button" class="">
-      <img
-        [attr.src]="'assets/logos/' + button.name + '-for-btn.png'"
-        alt=""
-        class="btn-img"
-      />
+    <div [attr.id]="'btn-' + button.name" class="">
+      <img [attr.src]="button.logoPath" alt="" class="btn-img" />
       <span>{{ button.name }}</span>
     </div>
   </a>
