@@ -1,19 +1,22 @@
-<h1 align="center">Portfolio v1</h1>
+![Image of Logo](https://github.com/k-le/portfolio-v1/blob/main/src/assets/logo.png)
 
-Hey!
+<h1 align="center">Portfolio v1</h1>
+<p align="center">
+Hey! :wave:
 
 This is the first iteration of my [portfolio](https://k-le.github.io/portfolio-v1) built with HTML, CSS, TypeScript, and Angular 11.2.5.
 
 ![Image of Demo](https://github.com/k-le/portfolio-v1/blob/main/src/assets/demo.png)
 
-<h2>Open-Source</h2>
+</p>
+<h2>:bulb: Open-Source</h2>
 I'm a fan of open-source, so I would like to keep this project available to those who are interested!
 
 You don't have to contact me regarding forking and using the code. However, I do not condone **plagiarism**, please give credit where credit is due. I love
 the idea of giving back to the community, but coming across a website that has been copied without any indication of credit always gives off a really
 bad feeling.
 
-## Build
+## :hammer: Build
 
 Build the project using the Angular CLI. `ng build` The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
