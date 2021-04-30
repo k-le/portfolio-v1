@@ -1,6 +1,6 @@
 # Portfolio-v1
 
-Hey bud.
+Hey bud!
 
 This is the first iteration of my portfolio. It was developed with HTML, CSS, TypeScript, and Angular 11.2.5. I'm a fan of open-source, so I would like
 to keep this project available to those who are interested!
