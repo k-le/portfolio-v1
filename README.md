@@ -5,7 +5,7 @@
 <p align="center">
   Hey! :wave:  
   This is the first iteration of my [portfolio](https://k-le.github.io/portfolio-v1) built with HTML, CSS, TypeScript, and Angular 11.2.5.  
-    
+  <br/>
   <img src="https://github.com/k-le/portfolio-v1/blob/main/src/assets/demo.png">
 </p>
 
