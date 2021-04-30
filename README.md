@@ -1,5 +1,7 @@
 <p align="center">
+
 ![Image of Logo](https://github.com/k-le/portfolio-v1/blob/main/src/assets/logo.png)
+
 </p>
 
 <h1 align="center">Portfolio v1</h1>
