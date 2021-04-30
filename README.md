@@ -4,7 +4,7 @@ Hey!
 
 This is the first iteration of my [portfolio](https://k-le.github.io/portfolio-v1) built with HTML, CSS, TypeScript, and Angular 11.2.5.
 
-https://github.com/k-le/portfolio-v1/blob/main/src/assets/demo.png
+![Image of Demo](https://github.com/k-le/portfolio-v1/blob/main/src/assets/demo.png)
 
 <h2>Open-Source</h2>
 I'm a fan of open-source, so I would like to keep this project available to those who are interested!
