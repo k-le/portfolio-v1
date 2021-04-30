@@ -12,7 +12,6 @@ import { AppComponent } from './app.component';
 import { NgbdModalContentComponent } from './ngbd-modal-content/ngbd-modal-content.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
 import { TitleButtonComponent } from './title-button/title-button.component';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
@@ -27,7 +26,6 @@ import { AsideMenuComponent } from './aside-menu/aside-menu.component';
     NgbdModalContentComponent,
     ContactButtonComponent,
     ContactModalComponent,
-    SideBarComponent,
     TitleButtonComponent,
     HeroSectionComponent,
     AboutSectionComponent,

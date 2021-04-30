@@ -62,6 +62,7 @@ p {
 
 .content-left .project-text {
   transform: translateX(-8%);
+  z-index: 1;
 }
 
 .content-right .project-text {
@@ -75,22 +76,36 @@ p {
 
 /* || Content Transition Styling */
 
-.content-left:hover .project-text {
+.content-left:hover .project-text,
+.content-left:active .project-text {
   transform: translate(13%, 2%);
+  z-index: 0;
 }
 
-.content-left:hover .project-img {
+.content-left:hover .project-img,
+.content-left:active .project-img {
   transform: scale(150%);
-  z-index: 10;
 }
 
-.content-right:hover .project-text {
+.content-left:hover .img-container,
+.content-left:active .img-container {
+  z-index: 5;
+}
+
+.content-right:hover .project-text,
+.content-right:active .project-text {
   transform: translate(-13%, 2%);
+  z-index: 0;
 }
 
-.content-right:hover .project-img {
+.content-right:hover .project-img,
+.content-right:active .project-img {
   transform: scale(150%);
-  z-index: 10;
+}
+
+.content-right:hover .img-container,
+.content-right:active .img-container {
+  z-index: 5;
 }
 
 /* || Content Animation Styling */

@@ -113,6 +113,36 @@
 
 /* || Responsive Media */
 
+@media screen and (max-width: 1250px) {
+  .side-buttons {
+    top: 30px;
+    left: 30px;
+  }
+
+  .img-box {
+    height: 55px;
+  }
+
+  .img-box img {
+    max-width: 55px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .side-buttons {
+    top: 20px;
+    left: 20px;
+  }
+
+  .img-box {
+    height: 45px;
+  }
+
+  .img-box img {
+    max-width: 45px;
+  }
+}
+
 @media screen and (max-width: 997px) {
   .intro-text p {
     font-size: 2rem;
