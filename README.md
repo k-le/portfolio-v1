@@ -1,18 +1,17 @@
-# PersonalWebsite
+# Portfolio-v1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+Hey bud!
 
-## Development server
+This is the first iteration of my portfolio. It was developed with HTML, CSS, TypeScript, and Angular 11.2.5. I'm a fan of open-source, so I would like
+to keep this project available to those who are interested!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You don't have to contact me regarding forking and using the code. However, I do not condone **plagiarism**, please give credit where credit is due. I love
+the idea of giving back to the community, but coming across a website that has been copied without any indication of credit always gives off a really
+bad feeling.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Build the project using the Angular CLI. `ng build` The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
