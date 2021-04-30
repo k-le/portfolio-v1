@@ -1,9 +1,15 @@
-# Portfolio-v1
+<h1 align="center">Portfolio v1</h1>
+<hr />
 
 Hey bud!
 
-This is the first iteration of my portfolio. It was developed with HTML, CSS, TypeScript, and Angular 11.2.5. I'm a fan of open-source, so I would like
-to keep this project available to those who are interested!
+This is the first iteration of my [portfolio](https://k-le.github.io/portfolio-v1) built with HTML, CSS, TypeScript, and Angular 11.2.5.
+
+![alt text](./assets/demo.png)
+
+<h2>Open-Source</h2>
+<hr />
+I'm a fan of open-source, so I would like to keep this project available to those who are interested!
 
 You don't have to contact me regarding forking and using the code. However, I do not condone **plagiarism**, please give credit where credit is due. I love
 the idea of giving back to the community, but coming across a website that has been copied without any indication of credit always gives off a really
