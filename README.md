@@ -19,9 +19,29 @@ You don't have to contact me regarding forking and using the code. However, I do
   
 I _love_ the idea of giving back to the community, but coming across a website that has been copied without any indication of credit always gives off a really bad feeling. :pensive:
 
+## Getting Started
+
+To get started, ensure that `npm` v6+ is installed (NodeJS LTS comes with the latest version of `npm`). From there, you can run the following command in order to install of the project dependencies:
+
+```npm i```
+
+It may be useful to install the Angular CLI globally. This can be done by executing the following command:
+
+```npm i -g @angular/cli```
+
 ## Build :hammer:
 
 Build the project using the Angular CLI. `ng build` The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running a Local Development Server
+
+You may run an instance of the website through a local development server. Angular has a built-in command to serve the project on the local machine:
+
+```ng serve --open```
+
+If the default port `4200` does not work - use the `--port` flag and specify a port number for the local development server to run on.
+
+```ng serve --port <port-number> --open```
 
 ## Running unit tests
 
