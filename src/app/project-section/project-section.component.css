@@ -52,52 +52,35 @@ p {
   transition-duration: 100ms;
 }
 
-.content-left .project-text {
-  transform: translateX(-8%);
-  z-index: 1;
-}
-
-.content-right .project-text {
-  transform: translateX(8%);
-  z-index: 1;
-}
-
 .hidden {
   opacity: 0;
 }
 
-/* || Content Transition Styling */
+/* || Project Link Styling */
 
-.content-left:hover .project-text,
-.content-left:active .project-text {
-  transform: translate(13%, 2%);
-  z-index: 0;
+a {
+  color: var(--dark-blue);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
 }
 
-.content-left:hover .project-img,
-.content-left:active .project-img {
-  transform: scale(150%);
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--sea-blue);
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 500ms;
 }
 
-.content-left:hover .img-container,
-.content-left:active .img-container {
-  z-index: 5;
-}
-
-.content-right:hover .project-text,
-.content-right:active .project-text {
-  transform: translate(-13%, 2%);
-  z-index: 0;
-}
-
-.content-right:hover .project-img,
-.content-right:active .project-img {
-  transform: scale(150%);
-}
-
-.content-right:hover .img-container,
-.content-right:active .img-container {
-  z-index: 5;
+a:hover::after {
+  transform: scale(1);
 }
 
 /* || Content Animation Styling */
