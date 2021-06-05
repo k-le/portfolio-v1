@@ -35,11 +35,11 @@ Build the project using the Angular CLI. `ng build` The build artifacts will be 
 
 ## Running a Local Development Server
 
-You may run an instance of the website through a local development server. Angular has a built-in command to serve the project on the local machine:
+You may run an instance of the website through a local development server. Angular has a built-in command to serve the project on a local machine:
 
 ```ng serve --open```
 
-If the default port `4200` does not work - use the `--port` flag and specify a port number for the local development server to run on.
+If the default port `4200` does not work, use the `--port` flag and specify a port number for the local development server to run on.
 
 ```ng serve --port <port-number> --open```
 
