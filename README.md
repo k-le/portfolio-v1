@@ -21,7 +21,7 @@ I _love_ the idea of giving back to the community, but coming across a website t
 
 ## Getting Started
 
-To get started, ensure that `npm` v6+ is installed (NodeJS LTS comes with the latest version of `npm`). From there, you can run the following command in order to install of the project dependencies:
+To get started, ensure that `npm` v6+ is installed (NodeJS LTS comes with the latest version of `npm`). From there, you can run the following command in order to install all of the project dependencies:
 
 ```npm i```
 
