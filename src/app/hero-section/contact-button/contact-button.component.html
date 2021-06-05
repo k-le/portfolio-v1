@@ -1,0 +1,9 @@
+<button *ngIf="!mobile" class="btn btn-lg contact-btn" (click)="open()">
+  <img src="assets/logos/Contact-for-btn.png" alt="" class="btn-img" />
+  Contact Me
+</button>
+
+<div *ngIf="mobile" class="mobile-contact" (click)="open()">
+  <img src="assets/logos/Contact-for-btn.png" alt="" class="btn-img" />
+  Contact
+</div>

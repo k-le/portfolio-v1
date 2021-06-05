@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { trigger, transition, animate, style } from '@angular/animations';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ContactModalComponent } from '../contact-modal/contact-modal.component';
+import { ContactModalComponent } from './contact-button/contact-modal/contact-modal.component';
 
 import { fixedButtons, Button } from '../titleButtons';
 import { ScrollDataService } from 'angular-scroll-animations';
@@ -109,5 +109,10 @@ export class HeroSectionComponent implements OnInit {
 
   showMobile(): void {
     this.mobile = this.mobileService.isMobile();
+  }
+
+  scrollToAbout(): void {
+    const windowHeight: number = window.innerHeight;
+    window.scrollTo(0, windowHeight);
   }
 }

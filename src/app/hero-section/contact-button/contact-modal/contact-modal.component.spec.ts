@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgbdModalContentComponent } from './ngbd-modal-content.component';
+import { ContactModalComponent } from './contact-modal.component';
 
-describe('NgbdModalContentComponent', () => {
-  let component: NgbdModalContentComponent;
-  let fixture: ComponentFixture<NgbdModalContentComponent>;
+describe('ContactModalComponent', () => {
+  let component: ContactModalComponent;
+  let fixture: ComponentFixture<ContactModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgbdModalContentComponent ]
+      declarations: [ ContactModalComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgbdModalContentComponent);
+    fixture = TestBed.createComponent(ContactModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
