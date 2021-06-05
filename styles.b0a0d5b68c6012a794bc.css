@@ -11,7 +11,7 @@
 * Licensed under the MIT license - http://opensource.org/licenses/MIT
 *
 * Copyright (c) 2020 Animate.css
-*/@media (prefers-reduced-motion:reduce),print{.animate__animated{animation-duration:1ms!important;transition-duration:1ms!important;animation-iteration-count:1!important}.animate__animated[class*=Out]{opacity:0}}*{margin:0 auto;font-family:Inter,serif}:root{--blue-black:#272e35;--blue-grey:#3a4750;--dark-red:#810000;--red:#d72323;--lightest-grey:245,245,245}.red{color:var(--red)}.dark-red{color:var(--dark-red)}
+*/@media (prefers-reduced-motion:reduce),print{.animate__animated{animation-duration:1ms!important;transition-duration:1ms!important;animation-iteration-count:1!important}.animate__animated[class*=Out]{opacity:0}}*{margin:0 auto;font-family:Inter,serif}:root{--blue-black:#272e35;--blue-grey:#3a4750;--blue:#007acc;--dark-red:#810000;--red:#d72323;--lightest-grey:245,245,245}.red{color:var(--red)}.dark-red{color:var(--dark-red)}
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
