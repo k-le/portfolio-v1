@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ContactModalComponent } from '../contact-modal/contact-modal.component';
-import { MobileService } from '../mobile.service';
+import { ContactModalComponent } from './contact-modal/contact-modal.component';
+import { MobileService } from '../../mobile.service';
 
 @Component({
   selector: 'app-contact-button',
