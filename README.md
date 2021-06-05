@@ -43,6 +43,10 @@ If the default port `4200` does not work, use the `--port` flag and specify a po
 
 ```ng serve --port <port-number> --open```
 
+After getting the development server up and running, the website can be accessed at:
+
+```http://localhost:4200/```
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
