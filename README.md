@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/k-le/portfolio-v1/blob/main/src/assets/logo.png">
 </p>
-<h1 align="center">Portfolio v1</h1>
+<h1 align="center">Portfolio v1.1</h1>
 <p align="center">
   Hey! :wave:
 </p>
