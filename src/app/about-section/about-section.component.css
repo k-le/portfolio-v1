@@ -1,7 +1,7 @@
 /* || Section Styling */
 section {
   margin: 10px auto;
-  max-width: 860px;
+  max-width: 960px;
   padding: 50px 0px;
 }
 
@@ -45,12 +45,12 @@ p {
 .content {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap: 35px;
+  gap: 25px;
 }
 
 .about-text {
   color: var(--blue-grey);
-  max-width: 640px;
+  max-width: 620px;
 }
 
 .about-img {
@@ -75,6 +75,20 @@ p {
 }
 
 /* || Responsive Media */
+
+@media screen and (max-width: 1150px) {
+  section {
+    max-width: 840px;
+  }
+
+  .about-text {
+    max-width: 560px;
+  }
+
+  .about-img {
+    max-width: 280px;
+  }
+}
 
 @media screen and (max-width: 997px) {
   .content {

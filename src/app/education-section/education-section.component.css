@@ -1,6 +1,6 @@
 section {
   margin: 10px auto;
-  max-width: 860px;
+  max-width: 960px;
   padding: 50px 0px;
 }
 
@@ -48,9 +48,9 @@ p {
 
 .content-text {
   position: relative;
-  left: 15px;
+  left: 0px;
   color: var(--blue-grey);
-  max-width: 640px;
+  max-width: 620px;
   margin: 0px 0px;
 }
 
@@ -70,6 +70,21 @@ p {
 }
 
 /* || Responsive Media */
+
+@media screen and (max-width: 1150px) {
+  section {
+    max-width: 840px;
+  }
+
+  .content-img-container,
+  .content-img {
+    max-width: 280px;
+  }
+
+  .content-text {
+    max-width: 560px;
+  }
+}
 
 @media screen and (max-width: 997px) {
   .content-heading {
